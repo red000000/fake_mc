@@ -10,7 +10,6 @@
 #define map_high (map_highsize/box_size)
 //以上是地图方块个数(注意除法取整问题
 #define box_max_id 10		//方块种类个数
-namespace map
-{
-	std::vector<std::vector<std::vector<int>>> map_create(int x, int y, int z);
-}
+
+
+std::vector<std::vector<std::vector<int>>> map_id_create(int x, int y, int z);
