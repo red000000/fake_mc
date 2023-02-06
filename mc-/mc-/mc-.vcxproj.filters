@@ -21,7 +21,10 @@
     <ClCompile Include="map_create.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="class.cpp">
+    <ClCompile Include="box_class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_class.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

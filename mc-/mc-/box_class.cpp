@@ -17,11 +17,11 @@ grass::grass()
 {
 	this->name = "²Ý·½¿é";
 	this->id = 1;
-	this->Excavate_Level = 0;
+	this->Excavate_Level_Need = 0;
 }
 stone::stone()
 {
 	this->name = "Ê¯Í·";
 	this->id = 2;
-	this->Excavate_Level = 1;
+	this->Excavate_Level_Need = 1;
 }

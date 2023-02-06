@@ -127,8 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="class.cpp" />
+    <ClCompile Include="box_class.cpp" />
     <ClCompile Include="map_create.cpp" />
+    <ClCompile Include="tool_class.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
