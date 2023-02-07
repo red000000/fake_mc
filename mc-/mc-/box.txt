@@ -1,0 +1,8 @@
+0 none 10
+1 grass 0
+2 stone 1
+3 wood 0
+4 plank 0
+5 bedrock 10
+98 head 10
+99 headless_Knight 10
