@@ -17,16 +17,6 @@ public:
 	int Excavate_Level_Need;//需要的挖掘等级
 	virtual	void box_set(int box_long, int box_wide, int box_high);//一般用不上
 };
-class grass :public box
-{
-public:
-	grass();
-};
-class stone :public box
-{
-public:
-	stone();
-};
 //分割线—————————— tool↓
 class tool :public items
 {	
