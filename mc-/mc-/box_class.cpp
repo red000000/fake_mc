@@ -25,3 +25,11 @@ stone::stone()
 	this->id = 2;
 	this->Excavate_Level_Need = 1;
 }
+void steve::body() {
+	this->id = 99;
+	this->name = "无头骑士";
+}
+void steve::head() {
+	this->id = 98;
+	this->name = "头";
+}

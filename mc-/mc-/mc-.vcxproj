@@ -131,6 +131,7 @@
     <ClCompile Include="map_create.cpp" />
     <ClCompile Include="tool_class.cpp" />
     <ClCompile Include="源.cpp" />
+    <ClCompile Include="bod_class.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="class.h" />
