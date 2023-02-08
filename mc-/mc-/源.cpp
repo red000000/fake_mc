@@ -15,5 +15,7 @@ int main()
 	}*/
 
 	//打印数字地图.jpg
+	steve A;
+	A.move();
 	return 0;
 }

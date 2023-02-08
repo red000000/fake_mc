@@ -131,11 +131,12 @@
     <ClCompile Include="map_create.cpp" />
     <ClCompile Include="tool_class.cpp" />
     <ClCompile Include="源.cpp" />
-    <ClCompile Include="bod_class.cpp" />
+    <ClCompile Include="role_operate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="class.h" />
     <ClInclude Include="map_create.h" />
+    <ClInclude Include="role_operate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
