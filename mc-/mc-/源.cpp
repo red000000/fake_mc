@@ -1,21 +1,27 @@
-ï»¿#include<iostream>
+#include<iostream>
 #include<vector>
+#include<thread>
 #include"class.h"
 #include"map_create.h"
+#include"role_operate.h"
 int main()
 {
-	std::vector<std::vector<std::vector<int>>> map_id = map::map_id_create(map_long, map_wide, map_high);//åˆ›å»ºåœ°å›¾
+	std::vector<std::vector<std::vector<int>>> map_id = map::map_id_create(map_long, map_wide, map_high);//´´½¨µØÍ¼
 	std::vector<box> box_data = map::box_data();
-	/*
-	for (int j = 0; j < map_wide; ++j)
+	std::vector<int> cde;//×ø±ê´¢´æÊý×é
+	cde.reserve(4);
+
+
+	/*for (int j = 0; j < map_wide; ++j)
 	{
 		for (int i = 0; i < map_long; ++i)
 			std::cout << map_id[i][j][50] << " ";
 		std::cout << std::endl;
 	}*/
-
-	//æ‰“å°æ•°å­—åœ°å›¾.jpg
-	steve A;
-	A.move();
+	//´òÓ¡Êý×ÖµØÍ¼.jpg
+	steve_make(cde);//´´½¨½ÇÉ« ×ø±ê¡¢
+	//std::thread move_td();
+	move(map_id, box_data, cde[1], cde[2], cde[3]);
+	//std::cout << "Äã" << std::endl;
 	return 0;
 }
