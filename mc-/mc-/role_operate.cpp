@@ -7,11 +7,12 @@
 
 
 
-void steve::move()
+void move()
 {
 	std::srand(time(0));
 	int x = rand() % 1000 + 1;
 	int y = rand() % 1000 + 1;
 	int z = 500;
 	std::cout << x << "    " << y << "    " << z <<"          \r";
+
 }

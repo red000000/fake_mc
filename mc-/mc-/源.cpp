@@ -2,6 +2,7 @@
 #include<vector>
 #include"class.h"
 #include"map_create.h"
+#include"role_operate.h"
 int main()
 {
 	std::vector<std::vector<std::vector<int>>> map_id = map::map_id_create(map_long, map_wide, map_high);//创建地图
@@ -15,7 +16,6 @@ int main()
 	}*/
 
 	//打印数字地图.jpg
-	steve A;
-	A.move();
+	move();
 	return 0;
 }
