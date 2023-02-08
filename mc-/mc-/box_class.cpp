@@ -2,6 +2,7 @@
 #include"map_create.h"
 box::box()//Ä¬ÈÏÎª10
 {
+	this->name = "xxx";
 	this->box_long = box_size;
 	this->box_wide = box_size;
 	this->box_high = box_size;
