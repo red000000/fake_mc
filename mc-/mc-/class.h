@@ -34,11 +34,3 @@ class Drafts//¸å×Ó
 
 };
 
-class steve :public box//ÊµÌå
-{
-public:
-	int x;
-	int y;
-	int z;
-	void move();
-};

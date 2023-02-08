@@ -4,10 +4,11 @@
 #include<conio.h>
 #include "class.h"
 #include "map_create.h"
+#include <vector>
+#include "role_operate.h"
 
 
-
-void steve::move()
+std::vector<int> steve::move()
 {
 	std::srand(time(0));
 	int x = rand() % 1000 + 1;
