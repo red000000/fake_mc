@@ -37,8 +37,6 @@ class Drafts//¸å×Ó
 class steve :public box//ÊµÌå
 {
 public:
-	void body();
-	void head();
 	int x;
 	int y;
 	int z;

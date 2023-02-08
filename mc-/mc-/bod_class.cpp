@@ -1,33 +1,30 @@
 #include "class.h"
-#include <vector>
 #include "map_create.h"
 #include <time.h>
 #include <windows.h>
-
-strand(time(0));
-x = rand() % 1000 + 1;
-y = rand() % 1000 + 1;
-z = 500;
-
+#include <iostream>
+#include <vector>
+std::srand(time(0));
+x = rand() % 1000 + 10;
+y = rand() % 1000 + 10;
+z = 510;
+std::cout << x << "    " << y << "    " << z << "    " << "    /r";
 void steve::move() {
 	while (1) {
-		if (GetKeyState('w') < 0) {
-			x+=10;
-			Sleep(100);
+		if (GetKeyState(87) < 0||GetKeyState(119)<0) {
+			x+=5;
 		}
-		if (GetKeyState('s') < 0) {
-			x-+10;
-			Sleep(100);
+		if (GetKeyState(83) < 0|| GetKeyState(115)) {
+			x-=5;
 		}
-		if (GetKeyState('a') < 0) {
-			y+=10;
-			Sleep(100);
+		if (GetKeyState(65) < 0|| GetKeyState(97)) {
+			y+=5;
 		}
-		if (GetKeyState('d') < 0) {
-			y-=10;
-			Sleep(100);
+		if (GetKeyState(68) < 0|| GetKeyState(100)) {
+			y-=5;
 		}
-		std::cout << x << y << z<<std::endl;
+		sleep(100);
+		std::cout << x << "    " << y << "    " << z << "    " << "    /r";
 	}
 }
 
