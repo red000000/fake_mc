@@ -42,7 +42,7 @@ std::vector<std::vector<std::vector<int>>> map::map_id_create(int x, int y, int 
 std::vector<box> map::box_data()
 {
 	int id = 0;
-	std::vector<box> box((100 + box_max_id) * sizeof(box));
+	std::vector<box> box(100 + box_max_id);
 	std::ifstream BOX_FILE;
 	BOX_FILE.open("box.txt", std::ios::in | std::ios::_Nocreate);
 	if (BOX_FILE.is_open())
