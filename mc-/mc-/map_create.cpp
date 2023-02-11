@@ -2,8 +2,10 @@
 #include<time.h>
 #include<iostream>
 #include<fstream>
+#include<cmath>
 #include"class.h"
 #include"map_create.h"
+
 
 std::vector<std::vector<std::vector<int>>> map::map_id_create(int x, int y, int z)
 {
@@ -38,7 +40,7 @@ std::vector<std::vector<std::vector<int>>> map::map_id_create(int x, int y, int 
 	}
 	return map_id;
 }
-
+double a = rand() % 360;
 std::vector<box> map::box_data()
 {
 	int id = 0;
@@ -62,11 +64,10 @@ std::vector<box> map::box_data()
 }
 void map::map_print(std::vector<std::vector<std::vector<int>>>& map_id, std::vector<box>& box_data, int& x, int& y, int& z)
 {
-	char dir = 'N';
 	int x_box = x / 10;
 	int y_box = y / 10;
 	int z_box = z / 10;
-	std::cout << x << "    " << y << "    " << z << "    当前朝向：" << dir << "          " << std::endl;
+	std::cout << x << "    " << y << "    " << z << "    当前朝向：" << a <<"°" << "          " << std::endl;
 	std::cout << "下身前方方块：" << box_data[map_id[x_box + 1][y_box][z_box]].name << std::endl;
 	std::cout << "上身前方方块：" << box_data[map_id[x_box + 1][y_box][z_box + 1]].name << std::endl;
 	std::cout << "下身左方方块：" << box_data[map_id[x_box][y_box + 1][z_box]].name << std::endl;
