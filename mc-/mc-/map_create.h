@@ -11,10 +11,11 @@
 #define map_high (map_highsize/box_size)
 //以上是地图方块个数(注意除法取整问题
 #define box_max_id 5		//方块种类个数
-
+#define PI (acos(-1.0))
+extern double angle;		//角度声明，map.cpp和role.cpp要用,在map.cpp定义
 namespace map
 {
-std::vector<std::vector<std::vector<int>>> map_id_create(int x, int y, int z);
+std::vector<std::vector<std::vector<int>>> map_id_create(int x_length, int y_length, int z_length);
 std::vector<box> box_data();
-void map_print(std::vector<std::vector<std::vector<int>>>& map_id, std::vector<box>& box_data,int&x,int&y,int&z);
+void map_print(std::vector<std::vector<std::vector<int>>>& map_id, std::vector<box>& box_data,double&x,double&y,double&z);
 }

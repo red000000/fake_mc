@@ -6,11 +6,11 @@
 #include"role_operate.h"
 int main()
 {
+	std::srand(time(0));//随机数启动
 	std::vector<std::vector<std::vector<int>>> map_id = map::map_id_create(map_long, map_wide, map_high);//创建地图
 	std::vector<box> box_data = map::box_data();
-	std::vector<int> cde;//坐标储存数组
+	std::vector<double> cde;//坐标储存数组
 	cde.reserve(4);
-
 
 	/*for (int j = 0; j < map_wide; ++j)
 	{
